@@ -38,31 +38,33 @@
             <div class="formrow">
                 <div class="item">
                     <label for="firstname">FIRST NAME</label>
-                    <input type="text" id="firstname">
+                    <input type="text" id="firstname" placeholder=" ">
+                    <span class="error"></span>
                 </div>
                 <div class="item">
                     <label for="lastname">LAST NAME</label>
-                    <input type="text" id="lastname">
+                    <input type="text" id="lastname" autocomplete="name">
                 </div>
             </div>
             <div class="formrow">
                 <div class="item">
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" autocomplete="email">
                 </div>
                 <div class="item">
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone">
+                    <input type="tel" id="phone" autocomplete="tel">
                 </div>
             </div>
             <div class="formrow">
                 <div class="item">
-                    <label for="psw">PASSWORD</label>
-                    <input type="password" id="psw">
+                    <label for="psw">*PASSWORD</label>
+                    <input type="password" id="psw" minlength="8" required>
+                    <span class="error">Enter a password</span>
                 </div>
                 <div class="item">
-                    <label for="confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm">
+                    <label for="confirm">*CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm" minlength="8" required>                    
                 </div>
             </div>
             <div class="formrow">

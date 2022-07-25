@@ -64,10 +64,6 @@ body {
     margin-top: 50px;
 }
 
-#login {
-    margin-bottom: 50px;
-}
-
 form {
     margin: 20px 10px;
 }
@@ -88,15 +84,66 @@ input {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
+    font-size: .75em;
 }
 
 input:focus {
-    background: rgba(0,0,0,.8);
-    color: #aaa;
-    font-weight: bold;
+    border: 1px solid blue;
+    box-shadow: inset 1px 5px rgba(158, 203, 240, .5);
+}
+
+input:invalid {
+    border: 1px solid red;
+    color: red;
+}
+
+.error {
+    font-size: .5em;
+    font-weight: normal;
+    color: red;
+    visibility: hidden;
+    display: block;
+    margin-top: .1em;
+}
+
+input[type='password']:invalid ~.error {
+    visibility: visible;
+}
+
+.formrow:last-child {
+    margin-top: 30px;
+    border-top: 2px solid #aaa;
 }
 
 button {
     font-family: inherit;
     font-size: 100%;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 10em;
+    height: 2em;
+    margin: 30px 10px;
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #000;
+    color: #aaa;
+}
+
+#login {
+    margin-bottom: 30px;
+}
+
+#login a {
+    text-decoration: none;
+    color: rgb(8, 77, 8);
+}
+
+#login a:hover {
+    color:rgb(11, 131, 11)
 }
