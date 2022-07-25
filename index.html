@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js-file.js" defer></script>
 </head>
 <body>
     <section class="sidebar">
@@ -34,7 +35,7 @@
         <div class="intro">
             Let's do this!
         </div>
-        <form action="#" method="post">
+        <form action="#" method="post" id="main-form">
             <div class="formrow">
                 <div class="item">
                     <label for="firstname">FIRST NAME</label>
@@ -60,11 +61,12 @@
                 <div class="item">
                     <label for="psw">*PASSWORD</label>
                     <input type="password" id="psw" minlength="8" required>
-                    <span class="error">Enter a password</span>
+                    <span class="error">min. 8 characters</span>
                 </div>
                 <div class="item">
                     <label for="confirm">*CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm" minlength="8" required>                    
+                    <input type="password" id="confirm" minlength="8" required> 
+                    <span class="error">min. 8 characters</span>                   
                 </div>
             </div>
             <div class="formrow">
