@@ -1,3 +1,9 @@
 # signup-form
 
-A simple sign-up form with basic client-side validation.
+This is a dummy sign-up form with data validation. All you have to do is just fill in a couple of fields and read the error message if you input no or wrong data.
+
+Technologies: HTML
+
+Github: https://github.com/prospero-apps/signup-form 
+
+Live: https://prospero-apps.github.io/signup-form
